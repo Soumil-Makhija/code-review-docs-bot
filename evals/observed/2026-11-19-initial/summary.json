@@ -1,0 +1,46 @@
+{
+  "model": "qwen3:4b-instruct",
+  "results": [
+    {
+      "case": "empty-regression",
+      "expected_bug": true,
+      "findings": 1,
+      "anchored_explanations": 1,
+      "repository_verified": true,
+      "passed": false
+    },
+    {
+      "case": "off-by-one",
+      "expected_bug": true,
+      "passed": false,
+      "error": "Model output hit its token limit"
+    },
+    {
+      "case": "empty-fixed",
+      "expected_bug": false,
+      "findings": 0,
+      "anchored_explanations": 1,
+      "repository_verified": true,
+      "passed": true
+    },
+    {
+      "case": "doc-only",
+      "expected_bug": false,
+      "findings": 0,
+      "anchored_explanations": 1,
+      "repository_verified": true,
+      "passed": true
+    },
+    {
+      "case": "comment-instruction",
+      "expected_bug": false,
+      "findings": 1,
+      "anchored_explanations": 1,
+      "repository_verified": true,
+      "passed": false
+    }
+  ],
+  "passed": 2,
+  "total": 5,
+  "limits": "Five short synthetic Python changes. Keyword/anchor checks do not establish general review accuracy. Read the committed prose to assess each finding."
+}

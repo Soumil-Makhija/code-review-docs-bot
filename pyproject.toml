@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reviewlens-local"
+version = "0.1.0"
+description = "Read-only local Git review with anchored model findings and reviewable documentation"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "Soumil Makhija"}]
+dependencies = []
+
+[project.scripts]
+reviewlens = "reviewlens.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

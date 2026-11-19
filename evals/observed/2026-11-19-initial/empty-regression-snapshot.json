@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "base_commit": "dc252f6a9bca3f81e26f1621e1ad0fcb8d8e992f",
+  "head_commit": "a851fb5c29afb8d9cc2486fcc083e61d4bd58287",
+  "files": [
+    {
+      "path": "calc.py",
+      "base_text": "def average(values):\n    if not values:\n        return 0\n    return sum(values) / len(values)\n",
+      "head_text": "def average(values):\n    return sum(values) / len(values)\n",
+      "changed_base_lines": [
+        2,
+        3
+      ],
+      "changed_head_lines": []
+    }
+  ],
+  "diff": "diff --git a/calc.py b/calc.py\nindex 811045e..3d50b59 100644\n--- a/calc.py\n+++ b/calc.py\n@@ -1,4 +1,2 @@\n def average(values):\n-    if not values:\n-        return 0\n     return sum(values) / len(values)\n"
+}

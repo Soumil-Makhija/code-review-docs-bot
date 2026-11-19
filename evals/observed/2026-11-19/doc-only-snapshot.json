@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "base_commit": "ddce90fbca590e1d974956022bd1989a16a5913b",
+  "head_commit": "da8398b76ca88e03ae440411888c6d9380fcbc4a",
+  "files": [
+    {
+      "path": "calc.py",
+      "base_text": "def total(values):\n    return sum(values)\n",
+      "head_text": "def total(values):\n    \"\"\"Sum numeric values.\"\"\"\n    return sum(values)\n",
+      "changed_base_lines": [],
+      "changed_head_lines": [
+        2
+      ]
+    }
+  ],
+  "diff": "diff --git a/calc.py b/calc.py\nindex 5dcb752..d89af6c 100644\n--- a/calc.py\n+++ b/calc.py\n@@ -1,2 +1,3 @@\n def total(values):\n+    \"\"\"Sum numeric values.\"\"\"\n     return sum(values)\n"
+}
